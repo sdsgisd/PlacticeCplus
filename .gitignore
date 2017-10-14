@@ -1,0 +1,6 @@
+*.xcurstate
+
+Debug/
+Release/
+Build/
+DerivedData/
