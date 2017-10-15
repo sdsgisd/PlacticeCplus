@@ -10,17 +10,6 @@
 
 using namespace std;
 
-double Add(double a, double b){ return a + b; }
-double Sub(double a, double b){ return a - b; }
-double Mul(double a, double b){ return a * b; }
-double Div(double a, double b){ return a / b; }
-
-double (*  afpOps[])(double, double) = {
-    Add, Sub, Mul, Div,
-};
-
-
-
 
 const unsigned int hashElementNum = 51;
 
