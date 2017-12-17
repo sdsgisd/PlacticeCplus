@@ -10,6 +10,7 @@
 		E1389D7F1F92326B00476B13 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1389D7E1F92326B00476B13 /* main.cpp */; };
 		E1389D8C1F92349900476B13 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1389D8B1F92349900476B13 /* main.cpp */; };
 		E1389D921F9234D000476B13 /* Hash1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1389D911F9234D000476B13 /* Hash1.cpp */; };
+		E1389DAD1F94AEA700476B13 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1389DAC1F94AEA700476B13 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		E1389DA81F94AEA700476B13 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +50,8 @@
 		E1389D8B1F92349900476B13 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		E1389D901F9234BF00476B13 /* Hash1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Hash1.h; sourceTree = "<group>"; };
 		E1389D911F9234D000476B13 /* Hash1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Hash1.cpp; sourceTree = "<group>"; };
+		E1389DAA1F94AEA700476B13 /* Object2Hash */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Object2Hash; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1389DAC1F94AEA700476B13 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +69,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E1389DA71F94AEA700476B13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -65,6 +84,7 @@
 			children = (
 				E1389D7D1F92326B00476B13 /* HashExample */,
 				E1389D8A1F92349900476B13 /* HashExample2 */,
+				E1389DAB1F94AEA700476B13 /* Object2Hash */,
 				E1389D7C1F92326B00476B13 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,6 +94,7 @@
 			children = (
 				E1389D7B1F92326B00476B13 /* HashExample */,
 				E1389D891F92349900476B13 /* HashExample2 */,
+				E1389DAA1F94AEA700476B13 /* Object2Hash */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,6 +115,14 @@
 				E1389D911F9234D000476B13 /* Hash1.cpp */,
 			);
 			path = HashExample2;
+			sourceTree = "<group>";
+		};
+		E1389DAB1F94AEA700476B13 /* Object2Hash */ = {
+			isa = PBXGroup;
+			children = (
+				E1389DAC1F94AEA700476B13 /* main.cpp */,
+			);
+			path = Object2Hash;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,6 +162,23 @@
 			productReference = E1389D891F92349900476B13 /* HashExample2 */;
 			productType = "com.apple.product-type.tool";
 		};
+		E1389DA91F94AEA700476B13 /* Object2Hash */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1389DB01F94AEA700476B13 /* Build configuration list for PBXNativeTarget "Object2Hash" */;
+			buildPhases = (
+				E1389DA61F94AEA700476B13 /* Sources */,
+				E1389DA71F94AEA700476B13 /* Frameworks */,
+				E1389DA81F94AEA700476B13 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Object2Hash;
+			productName = Object2Hash;
+			productReference = E1389DAA1F94AEA700476B13 /* Object2Hash */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -146,6 +192,9 @@
 						CreatedOnToolsVersion = 7.3.1;
 					};
 					E1389D881F92349900476B13 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					E1389DA91F94AEA700476B13 = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
 				};
@@ -164,6 +213,7 @@
 			targets = (
 				E1389D7A1F92326B00476B13 /* HashExample */,
 				E1389D881F92349900476B13 /* HashExample2 */,
+				E1389DA91F94AEA700476B13 /* Object2Hash */,
 			);
 		};
 /* End PBXProject section */
@@ -183,6 +233,14 @@
 			files = (
 				E1389D8C1F92349900476B13 /* main.cpp in Sources */,
 				E1389D921F9234D000476B13 /* Hash1.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1389DA61F94AEA700476B13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1389DAD1F94AEA700476B13 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +356,20 @@
 			};
 			name = Release;
 		};
+		E1389DAE1F94AEA700476B13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E1389DAF1F94AEA700476B13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -317,12 +389,22 @@
 				E1389D841F92326B00476B13 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E1389D8D1F92349900476B13 /* Build configuration list for PBXNativeTarget "HashExample2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E1389D8E1F92349900476B13 /* Debug */,
 				E1389D8F1F92349900476B13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1389DB01F94AEA700476B13 /* Build configuration list for PBXNativeTarget "Object2Hash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1389DAE1F94AEA700476B13 /* Debug */,
+				E1389DAF1F94AEA700476B13 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

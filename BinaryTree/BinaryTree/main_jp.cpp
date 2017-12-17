@@ -8,8 +8,10 @@
 
 using namespace std;
 
+// 入力バッファの最大サイズ
 const int BUFSIZE = 1024;
 
+// ノード
 struct SNode
 {
     char* id;
@@ -18,29 +20,39 @@ struct SNode
     SNode* pChild[2];
 };
 
+// 値の入力
 bool InputValue(SNode*& pRoot);
+// 値を探す
 bool FindValue(SNode* pRoot);
 
-//Operations for the binary tree.
+// 二分探索木の操作
 
+// ノードの初期化
 bool InitNode(SNode* pNode, const char* id, int num);
+// ノードの追加（再帰）
 bool AddNode(SNode*& pRoot, const char* id, int num);
+// ノードを探す（再帰）
 SNode*& FindNode(SNode*& pRoot, const char* id);
 
+// 木を表示する
 void DispTree(SNode* pRoot);
+// 木を表示する（再帰サブルーチン）
 void Rec_DispTree(SNode* pRoot, int nDepth);
 
+// 木を解放（再帰）
 void FreeTree(SNode* pRoot);
+// ノードを解放
 void FreeNode(SNode* pNode);
 
 
 
+// 値の入力
 bool InputValue(SNode*& pRoot)
 {
     char id[BUFSIZE];
     int  num;
     
-    cout << "Input string and value > " << flush;
+    cout << "文字列と値を入力して下さい > " << flush;
     cin >> id >> num;
     if(strcmp(id, "q") == 0 || num == -1)
         return false;
@@ -48,10 +60,11 @@ bool InputValue(SNode*& pRoot)
     return AddNode(pRoot, id, num);
 }
 
+// 値を探す
 bool FindValue(SNode* pRoot)
 {
     char id[BUFSIZE];
-    cout << "ＩＤ Input String > " << flush;
+    cout << "ＩＤ文字列を入力して下さい > " << flush;
     cin >> id;
     if(strcmp(id, "q") == 0)
         return false;
